@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
@@ -19,5 +20,8 @@ def tip_app():
     return render_template("index.html", final_amount=final_amount)
 
 
+
+
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5001)
+    port = int(os.environ.get("PORT", 5001))  # Use Render's PORT or default to 5000 locally
+    app.run(debug=True, host="0.0.0.0", port=port)
