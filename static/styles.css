@@ -1,0 +1,30 @@
+body {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ text-align: center;
+ background-color: #BBDCE5;
+
+}
+h1 {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #5D866C;
+
+}
+.bill, .tip, .people {
+    font-size: 1.5rem;
+    color: #626F47;
+}
+form {
+  margin-top: 40px;
+}
+
+form .form-control {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
